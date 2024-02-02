@@ -1,0 +1,143 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    font-family: sans-serif;
+    line-height: 1.5;
+    font-size: 16px;
+    background-color: beige;
+}
+.navbar{
+    background-color: blueviolet;
+    /* display: inline-block; */
+    float: left;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.navbar li{
+    display: inline-block;
+    margin-right: 80px;
+}
+.search{
+    display: inline-block;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color:orange;
+}
+
+.header h1{
+    display: inline-block;
+}
+.header img{
+    padding-top: 5px;
+}
+.news img,.sidebar img{
+    box-sizing: border-box;
+    width: 100%;
+}
+.articlecontent{
+    padding: 1rem;
+}
+.article{
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    background-color: white;
+}
+.pins{
+    margin-bottom: 1rem;
+    background-color: white;
+    padding: 1rem;
+}
+.footer{
+    background-color: rgba(0,0,0,0.96);
+    color: white;
+}
+.footer .bottomlinks{
+    text-align: left;
+}
+.header{
+    background-color: white;
+    margin-bottom: 1rem;
+}
+img{
+    max-width: 100%; /* to make all image all responsive*/
+}
+li{
+    list-style: none;
+    text-align: left;
+}
+/* flexbox */
+
+.container{
+    display: flex;
+}
+.header{
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+.footer{
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.news{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 520px){
+    .container{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 830px) and (min-width: 521px){
+    .container{
+        flex-wrap: wrap;
+    }
+    .news{
+        flex: 3;
+        box-sizing: border-box;
+        margin-right: 1rem;
+    }
+    .sidebar{
+        flex: 1;
+        box-sizing: border-box;
+    }
+}
+@media screen and (min-width: 831px){
+    .container{
+        flex-wrap: wrap;
+    }
+    .news{
+        flex: 3;
+        box-sizing: border-box;
+        margin-right: 1rem;
+    }
+    .sidebar{
+        flex: 1;
+        box-sizing: border-box;
+    }
+.big_article{
+    width: 100%;
+}
+.medium_article{
+    flex: 2;
+}
+.small_article{
+    flex: 1;
+}
+}
